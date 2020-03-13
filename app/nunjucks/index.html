@@ -1,0 +1,109 @@
+{% set title = 'Главная' %}
+
+{% extends 'layouts/_main.html' %}
+
+{% block content %}
+<!-- hero -->
+<div class="hero">
+    <div class="hero__head">
+        <div class="container">
+            <a href="/" class="head__logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="head__phone">
+                <a href="tel:+7 (383) 375-4848">
+                    <img src="img/head__phone__icon.svg" alt="">
+                    <span>+7 (383) 375-4848</span>
+                </a>
+                <div class="head__phone__timeworks">пн-пт с 8:00 до 21:00</div>
+            </div>
+            <button class="btn btn__small head__call__order">Заказать звонок</button>
+        </div>
+    </div>
+    <div class="hero__main">
+        <div class="container">
+            <h1 class="hero__main__title">Ремонт и запчасти для грузовых автомобилей</h1>
+            <div class="hero__main__logos">
+                <img src="img/logos/1.svg" alt="">
+                <img src="img/logos/2.svg" alt="">
+                <img src="img/logos/3.svg" alt="">
+                <img src="img/logos/4.svg" alt="">
+                <img src="img/logos/5.svg" alt="">
+                <img src="img/logos/6.svg" alt="">
+                <img src="img/logos/7.svg" alt="">
+                <img src="img/logos/8.svg" alt="">
+            </div>
+            <button class="btn">Бесплатная консультация</button>
+        </div>
+    </div>
+</div>
+<!--END hero -->
+
+<!-- services -->
+<div class="services">
+    <div class="container">
+        <h2 class="section__title">Виды работ которые мы выполяем</h2>
+        <p class="section__desc">Наведите курсор на кружок чтобы узнать подробности</p>
+        <div class="services__auto">
+            <img src="img/services.jpg" alt="">
+
+            <div class="services__auto__circle" data-circle-id="1">
+                <div class="services__auto__circle__content">Ремонт ДВС</div>
+            </div>
+
+            <div class="services__auto__circle" data-circle-id="2">
+                <div class="services__auto__circle__content">Ремонт тормозной системы</div>
+            </div>
+
+            <div class="services__auto__circle" data-circle-id="3">
+                <div class="services__auto__circle__content">Ремонт Мкпп</div>
+            </div>
+            
+            <div class="services__auto__circle" data-circle-id="4">
+                <div class="services__auto__circle__content">Ремонт редукторов</div>
+            </div>
+
+            <div class="services__auto__circle" data-circle-id="5">
+                <div class="services__auto__circle__content">Ремонт,покраска (кабина,будка)</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--END services -->
+
+<!-- contacts -->
+<div class="contacts">
+    <div class="container">
+        <h2 class="section__title">Наши контакты</h2>
+        <ul class="contacts__list">
+            <li>
+                <a href="tel:+7 (383) 375-4848">
+                    <img src="img/contacts__phone.svg" alt="">
+                    <span>+7 (383) 375-4848</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+7 (383) 375-4848">
+                    <img src="img/contacts__loc.svg" alt="">
+                    <span>г. Новосибирск, ул. Сибиряков-Гвардейцев, 62 к 2</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:dvork2006@yandex.ru">
+                    <img src="img/contacts__env.svg" alt="">
+                    <span>dvork2006@yandex.ru</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--END contacts -->
+
+<!-- map -->
+<div class="map">
+    <div class="container">
+        <button class="btn">Проложить маршрут</button>
+    </div>
+</div>
+<!--END map -->
+{% endblock %}
