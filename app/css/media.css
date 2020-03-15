@@ -1,5 +1,47 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+}
 @media screen and (max-width: 700px) {
   .services__auto {
     width: 100%;
+  }
+  .head__call__order {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .head__logo img {
+    width: 150px;
+  }
+  .head__phone a span {
+    font-size: 16px;
+  }
+  .hero__main__title {
+    font-size: 30px;
+  }
+  .hero__main__logos img {
+    height: 40px;
+  }
+  .contacts__list li a {
+    font-size: 14px;
+  }
+  .section__title {
+    font-size: 24px;
+  }
+  .section__desc {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero__head .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .head__phone {
+    margin-left: initial;
+    margin-top: 10px;
   }
 }
